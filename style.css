@@ -110,3 +110,12 @@ audio {
     max-width: 100%;
   }
 }
+
+/* Ensure full background visible in portrait on small devices */
+@media (max-width: 600px) and (orientation: portrait) {
+  body {
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
